@@ -1,0 +1,120 @@
+.Welcome {
+  text-align: center; /* Centers all text content */
+  max-width: 343px;
+  height: calc((100vh) - 112px); /* one hundred viewport height minus header height */
+
+  position: relative; /* Needed to center container */
+}
+
+/* Title */
+
+.Welcome .title {
+  text-align: start;
+}
+
+.Welcome .title h1 {
+  font-size: var(--font-size-lg);
+  font-family: var(--font-family-cursive);
+}
+
+/* Container */
+
+.Welcome .container {
+  width: 100%;
+
+  position: absolute; /* Centers all content */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Location */
+
+.Welcome .location p {
+  color: rgb(112, 121, 129);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.Welcome .location .from {
+  padding-bottom: 0.75rem; /* adds space between both locations */
+}
+
+/* ===== Media Queries ===== */
+
+/* Mobile Large */
+
+@media (min-width: 376px) {
+  .Welcome {
+    margin-left: auto; /* Keep Welcome div centered */
+    margin-right: auto;
+  }
+}
+
+/* Mobile Tall Screens */
+
+@media (min-height: 670px) and (max-width: 414px) {
+  .Welcome .title h1 {
+    font-size: 3rem;
+  }
+  
+}
+
+/* Tablet */
+
+@media (min-width: 426px) {
+  .Welcome {
+    max-width: 548px; /* Increases content width */
+  }
+
+  .Welcome .title h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* laptop */
+
+@media (min-width: 770px) {
+  .Welcome {
+    max-width: 620px; /* Increases content width */
+  }
+
+  .Welcome .title h1 {
+    font-size: 2.75rem;
+  }
+
+  .Welcome .location {
+    font-size: 1rem;
+    padding-top: 2rem;
+    display: flex; /* sets locations side-by-side */
+    justify-content: space-between;
+  }
+
+  .Welcome .location .from {
+    padding-bottom: 0; /* Removes space between locations */
+  }
+}
+
+/* Large Screens */
+
+@media (min-width: 1026px) {
+  .Welcome .title h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* XLarge Screens */
+
+@media (min-width: 1290px) {
+  .Welcome {
+    max-width: 800px;
+  }
+
+  .Welcome .title h1 {
+    font-size: 4rem;
+  }
+
+  .Welcome .location {
+    margin-top: 5rem;
+  }
+}

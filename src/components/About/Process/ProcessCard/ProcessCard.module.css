@@ -1,0 +1,126 @@
+.ProcessCard {
+  background-color: var(--color-light);
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  
+  /*width: 300px;*/
+
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  overflow: hidden; /* Hides body and text */
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.35);
+}
+
+.ProcessCard .title {
+  background-color: rgba(0, 0, 0, 0.502); /* Pick a color */
+  color: var(--color-light);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight);
+  letter-spacing: 0.1rem;
+  padding-top: 0.75rem; /* Adds height to title */
+  padding-bottom: 0.75rem; 
+}
+
+.ProcessCard .body {
+  background-color: rgba(0, 0, 0, 0.502); /* Pick a color */
+  height: 200px;
+
+  padding-top: 1.75rem; /* Padding for text */
+  padding-bottom: 1.75rem;
+  transform: translateY(101%); /* Hides card body */
+  transition: transform 0.7s ease-out;
+
+  display: flex; /* Centers text */
+  align-items: center;
+  justify-content: center;
+}
+
+.ProcessCard .body .text {
+  width: 90%;
+}
+
+.ProcessCard .body p {
+  color: var(--color-light);
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+.ProcessCard:hover {
+  box-shadow: 0px 0px 8px 6px rgba(255, 255, 255, 0.25), 0px 0px 8px rgba(255, 255, 255, 0.35);
+  outline: 2px solid var(--color-accent);
+}
+
+.ProcessCard:hover .body {
+  transform: translateY(0); /* Shows card body */
+}
+
+/* ===== Media Queries ===== */
+
+/* Mobile Medium */
+
+@media (min-width: 322px) {
+  .ProcessCard .body {
+    height: 220px; /* Increase height in response to increased width */
+    padding-top: 2rem; /* Padding for text */
+    padding-bottom: 2rem;
+  }
+}
+
+/* Mobile Large */
+
+@media (min-width: 378px) {
+  .ProcessCard {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .ProcessCard .body {
+    height: 250px; /* Increase height in response to increased width */
+  }
+}
+
+/* Tablet Middle */
+
+@media (min-width: 460px) {
+  .ProcessCard {
+    max-width: 415px; /* Sustains width on larger screens */
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .ProcessCard .body {
+    height: 300px; /* Increase height in response to increased width */
+    padding-top: 2rem; /* Padding for text */
+    padding-bottom: 2rem;
+  }
+}
+
+/* Laptop Small */
+
+@media (min-width: 824px) {
+  .ProcessCard {
+    max-width: 298px;
+  }
+
+  .ProcessCard .body {
+    height: 200px;
+  }
+}
+
+/* Laptop Large */
+
+@media (min-width: 1067px) {
+  .ProcessCard {
+    max-width: 328px;
+  }
+
+  .ProcessCard .body {
+    height: 250px; /* Increase height in response to parent grid */
+  }
+
+  .ProcessCard .title {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,19 @@
+.EmailButton .icon {
+  font-size: calc(var(--font-size-sm) * 2);
+  color: var(--color-medium);
+
+  transition: all 0.3s ease-out;
+}
+
+.EmailButton .icon:hover {
+  color: var(--color-accent);
+  transform: skewX(5deg);
+}
+
+/* Media Queries */
+
+@media (min-width: 896px) {
+  .EmailButton {
+    margin-left: 1.75rem; /* Adds margin left for EmailButton inside Header */
+  }
+}

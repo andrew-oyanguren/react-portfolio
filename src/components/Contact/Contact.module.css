@@ -1,0 +1,26 @@
+.Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Media Queries ===== */
+
+/* Mid Laptop */
+
+@media (min-width: 936px) {
+  .Contact {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Used to apply flex properties and center */
+  .GetInTouch-wrapper {
+    flex: 1;
+
+    display: flex; /* Maybe use global flex property */
+    align-content: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,58 @@
+.Process {
+  background: linear-gradient(45deg, rgb(112, 121, 129), rgb(134, 144, 154));
+  margin-top: 2.5rem; /* Creates space between intro and process */
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+
+  position: relative;
+  
+  display: grid;
+  gap: 2.5rem;
+}
+
+/* ===== Media Queries ===== */
+
+/* Tablet Middle */
+
+@media (min-width: 460px) {
+  .Process {
+    margin-top: 3rem; /* Creates space between intro and process */
+    padding-top: 4em;
+    padding-bottom: 4rem;
+  }
+}
+
+/* Middle Tablet */
+@media (min-width: 620px) {
+  .Process {
+    gap: 2.75rem;
+  }
+}
+
+/* Laptop Small */
+
+@media (min-width: 824px) {
+  .Process {
+    margin-top: 8rem; /* Increases space between intro and process */
+    grid-template-columns: repeat(3, 1fr); /* creates column layout */
+    gap: 0.5rem;
+  }
+}
+
+/* Laptop Large */
+
+@media (min-width: 1067px) {
+  .Process {
+    gap: 0;
+
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    border-bottom-left-radius: 100px; /* Stylistic Change */
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 15px;
+  }
+}

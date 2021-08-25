@@ -1,0 +1,14 @@
+.About {
+  text-align: center; /* Centers main content */
+  margin-top: 4rem; /* Main margin from header */
+}
+
+/* ===== Media Queries ===== */
+
+/* Middle laptop */
+
+@media (min-width: 936px) {
+  .About {
+    margin-top: 7rem; /* Increases main margin from header */
+  }
+}

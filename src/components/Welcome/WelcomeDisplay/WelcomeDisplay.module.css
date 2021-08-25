@@ -1,0 +1,176 @@
+.WelcomeDisplay {
+  margin-bottom: 2.5rem; /* adds space between locations and welcome display */
+}
+
+/* Quote */
+
+.WelcomeDisplay .quote {
+  height: 176px; /* Even out quotes box-model */
+  padding-top: 1.25rem;
+
+  display: flex; /* Centers quote container */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container */
+
+.WelcomeDisplay .quote .container {
+  position: relative; /* Allows for psuedo placement */
+}
+
+/* Pseudo Quote */
+
+.WelcomeDisplay .quote .container::before {
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.25));
+  color: var(--color-accent);
+  content: open-quote;
+  font-size: 3.25rem;
+  font-family: var(--font-family-cursive);
+
+  position: absolute; /* quote psuedo placement */
+  top: -1.15rem;
+  left: -0.5rem;
+}
+
+/* Text */
+
+.WelcomeDisplay .quote .text {
+  line-height: 1.35;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.WelcomeDisplay .quote .text p {
+  color: var(--color-dark);
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.35));
+}
+
+/* Author */
+
+.WelcomeDisplay .quote .author {
+  font-family: var(--font-family-cursive);
+  
+  text-align: end;
+  padding-right: 1rem;
+  padding-top: 1rem; /* Adds space between author and <hr /> */
+}
+
+/* Horizontal Rule */
+
+.WelcomeDisplay hr {
+  width: 90%;
+  max-width: 350px;
+  
+  margin-left: auto; /* Centers Horizontal Rule */ 
+  margin-right: auto;
+}
+
+/* ===== Media Queries ===== */
+
+/* Mobile Medium */
+
+/*@media (min-width: 324px) {
+  .WelcomeDisplay .quote .container {
+    width: 90%;
+  }
+}*/
+
+/* Mobile short screens */
+
+@media (max-height: 510px) and (max-width: 414px) {
+  .WelcomeDisplay {
+    margin-bottom: 1rem; /* Decreases space between locations and welcome display */
+  } 
+}
+
+/* Mobile Tall screens */
+
+@media (min-height: 670px) and (max-width: 414px) {
+  .WelcomeDisplay {
+    margin-bottom: 4rem; /* Increases space between locations and welcome display */
+  }
+
+  .WelcomeDisplay .quote {
+    height: 180px; /* Increases size of quote box-model */
+    padding-top: 1rem;
+  }
+  
+}
+
+/* Tablet */
+
+@media (min-width: 426px) {
+
+  .WelcomeDisplay hr {
+    max-width: 380px;
+  }
+
+  .WelcomeDisplay .quote {
+    padding-top: 2.2rem; /* Increases space between quote and switcher */
+  }
+
+  .WelcomeDisplay .quote .container {
+    max-width: 380px;
+  }
+
+  /*.WelcomeDisplay .quote .container::before {
+    left: -1.25rem /* Adjust psudeo position with increased font size. 
+  }*/
+
+  .WelcomeDisplay .quote .text {
+    font-size: 1.25rem;
+  }
+
+  .WelcomeDisplay .quote .author {
+    font-size: 1.15rem;
+  }
+}
+
+/* Laptop */
+
+@media (min-width: 770px) {
+  
+  .WelcomeDisplay .quote .container {
+    max-width: 420px;
+  }
+
+  .WelcomeDisplay .quote .container::before {
+    font-size: 3.5rem;
+    left: -1.15rem /* Adjust psudeo position with increased font size. */
+  }
+
+  .WelcomeDisplay .quote .author {
+    padding-bottom: 1.25rem; /* Increases space between author and <hr/> */
+  }
+
+  .WelcomeDisplay hr {
+    max-width: 420px;
+  }
+}
+
+/* XLarge Screens */
+
+@media (min-width: 1290px) {
+  .WelcomeDisplay .quote {
+    padding-top: 4rem;
+  }
+
+  .WelcomeDisplay .quote .container {
+    max-width: 480px;
+  }
+
+  .WelcomeDisplay .quote .author {
+    padding-bottom: 1rem; /* Increases space between author and <hr/> */
+  }
+
+  .WelcomeDisplay .quote .text {
+    font-size: 1.35rem;
+  }
+
+  .WelcomeDisplay hr {
+    max-width: 460px;
+    margin-top: 1rem;
+  }
+}
+

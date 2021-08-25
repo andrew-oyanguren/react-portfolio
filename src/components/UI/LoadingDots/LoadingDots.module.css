@@ -1,0 +1,52 @@
+.LoadingDots {
+  /* Local Variables */
+  --dots-bg-color: 0, 139, 139;
+  --animation-timing-function: cubic-bezier(.19,.57,.3,.98);
+
+  width: 100px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: space-evenly;
+  z-index: var(--loader-z-index);
+}
+
+.LoadingDots > div {
+  content: " ";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: bounce 0.5s var(--animation-timing-function) infinite alternate;
+}
+
+.LoadingDots div:first-child {
+  background-color: rgb(var(--dots-bg-color));
+}
+
+.LoadingDots div:nth-child(2) {
+  animation-delay: 0.11s;
+  background-color: rgba(var(--dots-bg-color), 0.75);
+}
+
+.LoadingDots div:nth-child(3) {
+  animation-delay: 0.22s;
+  background-color: rgba(var(--dots-bg-color), 0.55);
+}
+
+.LoadingDots div:last-child {
+  animation-delay: 0.34s;
+  background-color: rgba(var(--dots-bg-color), 0.25);
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-45px);
+  }
+}

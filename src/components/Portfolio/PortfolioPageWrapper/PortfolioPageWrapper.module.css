@@ -1,0 +1,25 @@
+.PortfolioPageWrapper {
+  width: 100%;
+  max-width: var(--xl-screen);
+  margin-left: auto; /* Centers Wrapper */
+  margin-right: auto;
+  padding-left: 16px; /* Provides padding for mobile view */
+  padding-right: 16px;
+
+  position: relative;
+}
+
+/* Media Queries */
+
+@media (min-width: 498px) {
+  .PortfolioPageWrapper {
+    padding-left: 0; /* Removes padding from edges */
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 936px) {
+  .PortfolioPageWrapper {
+    max-width: 100%; /* Allows Wrapper to expand the width of entire viewport */
+  }
+}

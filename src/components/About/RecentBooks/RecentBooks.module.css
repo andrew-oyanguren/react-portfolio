@@ -1,0 +1,105 @@
+.RecentBooks {
+  max-width: 1200px;
+  margin-top: 4rem; /* Creates space between "recent books" and "skills" table */
+  
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.RecentBooks .heading {
+  text-align: start;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+}
+
+.RecentBooks .heading h3 {
+  font-size: 1.65rem;
+  font-family: var(--font-family-cursive);
+  font-weight: var(--font-weight-bold);
+}
+
+.RecentBooks .container {
+  margin-top: 1rem; /* Creates space heading and books */
+  padding-bottom: 1rem;
+  position: relative;
+  
+  display: grid;
+  gap: 0.85rem 0;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.RecentBooks .container::after {
+  content: " ";
+  display: none;
+  background: linear-gradient(-45deg, rgb(99, 107, 114) 30%, rgb(134, 144, 154));
+  width: 100%;
+  height: 55%;
+  position: absolute;
+  bottom: 0;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+}
+
+
+/* ===== Media Queries ===== */
+
+/* Mobile Medium */
+
+@media (min-width: 368px) {
+  .RecentBooks {
+    margin-top: 4rem; /* Increases space between title and books */
+  }
+
+  .RecentBooks .container {
+    max-width: 420px;
+    margin-top: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+/* Tablet Medium */
+
+@media (min-width: 720px) {
+
+  .RecentBooks {
+    margin-top: 10rem; /* Increases space between "recent books" and "skills" table */
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .RecentBooks .heading {
+    max-width: 100%;
+    padding-left: 1rem;
+  }
+
+  .RecentBooks .heading h3 {
+    font-size: 2.15rem;
+  }
+
+  .RecentBooks .container {
+    margin-top: 2rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .RecentBooks .container::after {
+    display: block;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Laptop Large */
+
+@media (min-width: 936px) {
+  .RecentBooks .heading {
+    max-width: 1160px;
+    padding-left: 2rem;
+  }
+}

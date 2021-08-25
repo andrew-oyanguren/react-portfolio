@@ -1,13 +1,131 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Import Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+/* Root Variables */
+
+:root {
+  /* Font Families */
+  --font-family-sans: 'Poppins', sans-serif;
+  --font-family-cursive: 'Kalam', cursive;
+
+  /* Font Sizes */
+  --font-size: 1rem;
+  --font-size-sm: 1.125rem;
+  --font-size-md: 1.25rem; 
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 2rem;
+
+  /* Font Weights */
+  --font-weight: 400;
+  --font-weight-md: 500;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height: 1.15;
+  --line-height-sm: 1.25;
+
+  /* Page Colors */
+  --color-dark: rgb(53, 53, 53);
+  --color-medium: rgb(171, 171, 171);
+  --color-light: whitesmoke;
+  --color-accent: orange;
+
+  /* Z-Index */
+  --side-bar-z-index: 10;
+  --header-z-index: 100;
+  --hamburger-z-index: 101;
+  --modal-z-index: 999;
+  --loader-z-index: 1000;
+
+  /* Breakpoints */
+  --sm-screen: 576px;
+  --md-screen: 768px;
+  --lg-screen: 992px;
+  --xl-screen: 1200px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Global Presets */
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0; /* research some more */
+}
+
+::before,
+*::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Global Layout */
+
+.centered {
+  position: absolute;
+  margin-top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Removes Browser defaults on <ul> elements */
+
+ul {
+  padding-left: 0;
+}
+
+/* Responsive Images */
+
+img {
+  max-width: 100%;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: var(--color-accent);  /* May need to change */
+  font-size: 1.75rem;
+  font-weight: var(--font-weight-md); /* Stylistic Choice */
+}
+
+p {
+  color: rgb(57, 57, 57);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }

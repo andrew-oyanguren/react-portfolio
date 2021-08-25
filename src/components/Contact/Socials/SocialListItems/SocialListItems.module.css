@@ -1,0 +1,55 @@
+.SocialListItems {
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 2.5rem; /* centers text evenly */
+  padding-right: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.SocialListItems .text {
+  color: var(--color-medium);
+  padding-top: 0.75rem;
+}
+
+/* ===== Media Queries ===== */
+
+/* Middle Mobile Large */
+
+@media (min-width: 415px) {
+  .SocialListItems {
+    flex-direction: row; /* Adjusts icons and text side-by-side */
+  }
+
+  .SocialListItems .text {
+    padding-top: 0;
+    padding-left: 2rem; /* centers text evenly */
+    padding-right: 0;
+    text-align: start; /* Adjusts text to start, and gives a straight/uniform look */
+  }
+}
+
+/* Middle laptop */
+
+@media (min-width: 936px) {
+
+  .SocialListItems { 
+    padding-left: 0; /* centers text evenly */
+    padding-right: 0;
+    margin-top: 0;
+  }
+
+  .SocialListItems:nth-of-type(2) {
+    margin-top: 3rem;
+    margin-bottom: 3rem; /* Provides even Space from middle list-item */
+  }
+
+  .SocialListItems .text {
+    padding-left: 1.5rem; /* centers text evenly */
+  }
+}

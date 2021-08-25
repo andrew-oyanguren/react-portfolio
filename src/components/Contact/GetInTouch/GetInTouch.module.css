@@ -1,0 +1,156 @@
+.GetInTouch {
+  /* Local Variables */
+  --drop-shadow: 0px 2px 3px rgba(0, 0, 0, 0.35);
+
+  text-align: center;
+  margin-top: 4rem; /* Adjust */
+}
+
+/* heading */
+
+.GetInTouch h1 {
+  font-family: var(--font-family-cursive);
+  font-size: 2.75rem;
+}
+
+/* Horizontal Rule */
+
+.GetInTouch hr {
+  width: 90%;
+  max-width: 350px;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Quote */
+
+.GetInTouch .quote {
+  margin-top: 3rem;
+}
+
+.GetInTouch .quote .text {
+  max-width: 320px;
+  position: relative; /* Used to set "open-quote" before pseudo */
+}
+
+.GetInTouch .quote .text p {
+  color: var(--color-dark);
+  font-size: var(--font-size-sm);
+  max-width: 320px;
+  line-height: var(--line-height-sm);
+  padding-left: 1rem; /* Line-length management */
+  padding-right: 1rem;
+  filter: drop-shadow(var(--drop-shadow));
+}
+
+/* Psuedo Open Quote */
+
+.GetInTouch .quote .text::before {
+  filter: drop-shadow(var(--drop-shadow));
+  color: var(--color-accent);
+  content: open-quote;
+  font-size: 3.25rem;
+  font-family: var(--font-family-cursive);
+
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+}
+
+/* Author */
+
+.GetInTouch .quote .author {
+  padding-top: 1rem; /* Adds space between author and quote */
+}
+
+.GetInTouch .quote .author p {
+  font-family: var(--font-family-cursive);
+  font-weight: var(--font-weight-bold);
+}
+
+/* ===== Media Queries ===== */
+
+@media (min-width: 322px) {
+  .GetInTouch h1 {
+    font-size: 3.25rem;
+  }
+
+  .GetInTouch .quote .text::before {
+    left: -0.1rem;
+  }
+}
+
+/* Middle Mobile Medium */
+
+@media (min-width: 362px) {
+  .GetInTouch .quote {
+    margin-top: 3.5rem;
+  }
+
+  .GetInTouch .quote p {
+    padding-left: 1.75rem; /* Line-length management */
+    padding-right: 1.75rem;
+  }
+}
+
+/* Early Mobile Large */
+
+@media (min-width: 396px) {
+  .GetInTouch h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Tablet */
+
+@media (min-width: 426px) {
+  .GetInTouch h1 {
+    font-size: 3.75rem;
+  }
+
+  .GetInTouch .quote .text::before {
+    font-size: 3.75rem;
+  }
+
+  .GetInTouch .quote .text p {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Middle Laptop */
+
+@media (min-width: 936px) {
+  .GetInTouch {
+    margin-top: 0;
+  }
+
+  .GetInTouch .quote .text::before {
+    font-size: 4rem;
+    top: -1.75rem;
+    left: -0.5rem
+  }
+}
+
+/* XLarge Screens */
+
+@media (min-width: 1440px) {
+
+  .GetInTouch {
+    margin-top: 0;
+    width: 600px;
+  }
+
+  .GetInTouch h1 {
+    font-size: 4.5rem;
+  }
+
+  .GetInTouch .quote .text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+

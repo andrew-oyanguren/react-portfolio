@@ -1,0 +1,87 @@
+.Socials {
+  background-color: var(--color-dark);
+  margin-top: 3em; /* Provides space between socials and quote */
+  width: 100%;
+  
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Socials .wrapper {
+  max-width: 340px;
+  text-align: center;
+}
+
+/* Title */
+
+.Socials .title h3 {
+  color: var(--color-accent);
+  font-size: 1.75rem;
+  font-weight: var(--font-weight-md);
+  text-transform: uppercase;
+}
+
+/* Unordered List */
+
+.Socials ul {
+  margin-top: 2rem; /* Adds space between ul and title */
+}
+
+/* ===== Media Queries ===== */
+
+/* Early Tablet */
+
+@media (min-width: 520px) {
+  .Socials .wrapper {
+    max-width: 400px;
+  }
+}
+
+/* Middle Laptop */
+
+@media (min-width: 936px) {
+  .Socials {
+    width: 400px;
+    height: calc((100vh) - 112px); /* Sets hight to viewport minus the header height */
+    margin-top: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .Socials .wrapper {
+    max-width: 260px;
+    margin-left: 2.75rem;
+    margin-right: 1.25rem;
+  }
+
+  .Socials .title {
+    text-align: start;
+  }
+
+  .Socials .title h3 {
+    margin-bottom: 2rem;
+  }
+}
+
+/* XLarge Screens */
+
+@media (min-width: 1440px) {
+  .Socials {
+    width: 560px; /* Keeps Socials at a nice width on huge screens */
+  }
+
+  .Socials .wrapper {
+    max-width: 280px;
+    margin-left: 2.75rem;
+    margin-right: 2.75rem;
+  }
+
+  .Socials .title h3 {
+    font-size: 2.25rem;
+  }
+}

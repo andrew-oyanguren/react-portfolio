@@ -1,0 +1,87 @@
+.Network {
+  margin-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+/* Email */
+
+.Network .email {
+  display: flex; /* May use global flex prop */
+  align-items: center;
+  justify-content: center;
+}
+
+.Network .email .address {
+  margin-right: 0.75rem; /* Adds space between email text and EmailButton component */
+}
+
+/* Call */
+
+.Network .call .wrapper {
+  padding-top: 1.25rem; /* Provides even space */
+  padding-bottom: 1.25rem;
+}
+
+.Network .call .text {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  max-width: 500px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35); /* May create global css */
+}
+
+.Network .call .text span {
+  color: var(--color-accent);
+  padding-right: 0.25rem; /* Adds small space between span and text */
+}
+
+/* ===== Media Queries ===== */
+
+/* Mobile Large */
+
+@media (min-width: 376px) {
+  .Network {
+    margin-top: 1.75rem;
+  }
+}
+
+/* Middle Laptop */
+
+@media (min-width: 936px) {
+  .Network {
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .Network .call .wrapper {
+    padding-top: 1rem; /* Slightly reduces even space */
+    padding-bottom: 1rem;
+  }
+}
+
+/* XLarge Screens */
+
+@media (min-width: 1440px) {
+
+  .Network .email .address {
+    font-size: 1.15rem;
+  }
+
+  .Network .call .wrapper {
+    padding-top: 1.75rem; /* Slightly reduces even space */
+    padding-bottom: 1.75rem;
+  }
+
+  .Network .call .wrapper a {
+    font-size: 1.25rem;
+  }
+
+  .Network .call .text {
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,130 @@
+.Skills {
+  max-width: 344px;
+  margin-top: 3rem; /* Creates space betweern "skills" and "process" cards */
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.Skills .passion .text {
+  padding: 1.5rem 0 1.5rem 0.5rem; /* Padding for text */
+  text-align: start;
+  max-width: 550px;
+}
+
+.Skills .passion .text .title {
+  margin-bottom: 1rem;
+}
+
+.Skills .passion .text .title h3 {
+  font-family: var(--font-family-cursive);
+  font-size: 2.75rem;
+}
+
+.Skills .passion .text p {
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+
+/* ===== Media Queries ===== */
+
+/* Mobile Medium */
+
+@media (min-width: 322px) {
+  .Skills .passion .text {
+    padding: 1.5rem 1rem; /* Increases left/right padding for text */
+  }
+}
+
+/* Mobile Medium - Mobile Large */
+
+@media (min-width: 368px) {
+  .Skills {
+    margin-top: 4.5rem; /* Increases space betweern "skills" and "process" cards */
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .Skills .passion .text .title {
+    padding-bottom: 0.15rem; /* Adds space between title and text */
+  }
+
+  .Skills .passion .text .title h3 {
+    font-size: 3.15rem;
+  }
+}
+
+/* Tablet Middle */
+
+@media (min-width: 550px) {
+  .Skills {
+    max-width: 550px;
+  }
+
+  .Skills .passion .text {
+    padding: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .Skills .passion .text .title h3 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Laptop Middle */
+
+@media (min-width: 804px) {
+  .Skills {
+    max-width: 95%;
+  }
+
+  .Skills .text {
+    height: 100%;
+  }
+}
+
+/* Laptop Middle */
+
+@media (min-width: 936px) {
+
+  .Skills {
+    margin-top: 10rem; /* Increases space betweern "skills" and "process" cards */
+  }
+
+  .Skills .passion .text .title {
+    text-align: start;
+    padding-left: 0.5rem;
+  }
+
+  .Skills .passion .container {
+    display: grid; /* Creates grid column layout */
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+  }
+
+  .Skills .passion .text {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .Skills .passion .text p {
+    font-size: 1.15rem;
+  }
+
+  .Skills .passion .table {
+    grid-column-start: 5;
+    grid-column-end: 9;
+  }
+}
+
+/* Laptop Large */
+
+@media (min-width: 1200px) {
+  .Skills .container {
+    max-width: 1160px;
+  }
+
+  .Skills .passion .text p {
+    font-size: 1.2rem;
+  }
+}

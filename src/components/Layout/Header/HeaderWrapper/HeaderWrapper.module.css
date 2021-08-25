@@ -1,0 +1,15 @@
+.HeaderWrapper {
+  width: 100%;
+  height: inherit;
+  max-width: var(--xl-screen);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px; /* Remove after testing */
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+

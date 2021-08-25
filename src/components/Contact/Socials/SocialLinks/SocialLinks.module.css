@@ -1,0 +1,21 @@
+.SocialLinks {
+  color: var(--color-light);
+  font-size: 2rem;
+  line-height: 0.8; /* Removes an excess of line height with icons */
+
+  transition: all 0.3s ease;
+}
+
+.SocialLinks:hover {
+  color: var(--color-accent);
+}
+
+/* ===== Media Queries ===== */
+
+/* Middle Laptop */
+
+@media (min-width: 936px) {
+  .SocialLinks {
+    font-size: 2.25rem;
+  }
+}

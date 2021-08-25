@@ -1,0 +1,33 @@
+.AboutPageWrapper {
+  width: 100%;
+  margin-left: auto; /* Centers Wrapper */
+  margin-right: auto;
+}
+
+/* ===== Media Queries ===== */
+
+/* Middle Tablet */
+
+@media (min-width: 620px) {
+  .AboutPageWrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* Small Laptop */
+
+@media (min-width: 824px) {
+  .AboutPageWrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Middle Laptop */
+
+@media (min-width: 936px) {
+  .AboutPageWrapper {
+    max-width: var(--xl-screen);
+  }
+}

@@ -1,0 +1,113 @@
+.DisplaySwitcher {
+  background-color: var(--color-dark);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  margin-top: 2rem; /* Adds space between switcher and title */
+
+  display: flex;
+  align-items: center;
+}
+
+/* Buttons */
+
+.DisplaySwitcher button {
+  background-color: transparent;
+  color: var(--color-medium);
+  font-size: 2.5rem;
+  border: none;
+  cursor: pointer;
+
+  display: flex; /* Centers Icons */
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.4s ease;
+}
+
+.DisplaySwitcher button:hover {
+  color: var(--color-accent);
+}
+
+.DisplaySwitcher button:active {
+  transform: scale(1.15);
+}
+
+/* Title */
+
+.DisplaySwitcher .title {
+  text-align: center;
+  flex: 1; /* Allows title to take up "left over" space in flexbox */
+}
+
+.DisplaySwitcher .title h3 {
+  color: var(--color-accent);
+  font-size: 1.75rem;
+  font-weight: var(--font-weight-md);
+}
+
+/* ===== Media Queries ===== */
+
+/* Mobile Medium */
+
+@media (min-width: 324px) {
+  .DisplaySwitcher .title h3 {
+    font-size: var(--font-size-xl);
+  }
+}
+
+/* Mobile Short Screens */
+
+@media (max-height: 510px) and (max-width: 414px) {
+  .DisplaySwitcher {
+    margin-top: 1rem; /* decreases space between switcher and title */
+  }
+}
+
+/* Mobile Tall Screens */
+
+@media (min-height: 670px) and (max-width: 414px) {
+  .DisplaySwitcher {
+    margin-top: 3rem; /* Increases space between switcher and title */
+  }
+}
+
+/* Tablet */
+
+@media (min-width: 426px) {
+  .DisplaySwitcher {
+    max-width: 500px;
+    margin-top: 2.75rem; /* Increases space between switcher and title */
+  }
+
+  .DisplaySwitcher .title h3 {
+    font-size: 2.75rem;
+  }
+}
+
+/* Laptop */
+
+@media (min-width: 770px) {
+  .DisplaySwitcher {
+    max-width: 560px;
+    margin-top: 3rem; /* Increases space between switcher and title */
+  }
+}
+
+/* XLarge Screens */
+
+@media (min-width: 1290px) {
+  .DisplaySwitcher {
+    max-width: 720px;
+    margin-top: 4rem;
+  }
+
+  .DisplaySwitcher button {
+    font-size: 4rem;
+  }
+
+  .DisplaySwitcher .title h3 {
+    font-size: 4rem;
+  }
+}

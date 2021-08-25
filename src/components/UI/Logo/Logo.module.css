@@ -1,0 +1,114 @@
+.Logo {
+  /* Local Variables */
+  --link-dimension: 4rem;
+  --link-border-radius: 4px;
+  --link-box-shadow-color: 255, 255, 255;
+  --animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+  display: flex;
+  align-items: center;
+}
+
+/* Brand */
+
+.Logo .brand {
+  color: var(--color-accent);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-md);
+  margin-left: var(--font-size-lg);
+}
+
+/* Link */
+
+.Logo .link {
+  color: var(--color-medium);
+  font-size: var(--font-size-lg);
+  text-decoration: none;
+  letter-spacing: 0.125em;
+  width: var(--link-dimension);
+  height: var(--link-dimension);
+  border-radius: var(--link-border-radius);
+
+  position: relative;
+
+  transition: all 0.3s ease;
+}
+
+/* Link States */
+
+.Logo .link:hover {
+  color: var(--color-light);
+}
+
+.Logo .link::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--color-medium);
+  border-radius: var(--link-border-radius);
+
+  position: absolute;
+
+  transition: all 0.3s ease;
+}
+
+.Logo .link:active {
+  box-shadow: 0 0 3px rgba(var(--link-box-shadow-color), 0.45), 0 0 7px 2px rgba(var(--link-box-shadow-color), 0.45);
+}
+
+.Logo .link:hover.link::before {
+  border-color: var(--color-accent);
+  animation: logoSpin 0.75s var(--animation-timing-function) forwards;
+}
+
+/* Logo Animation */
+
+@keyframes logoSpin {
+  0% {
+    box-shadow: none;
+    transform: rotateZ(0);
+  }
+  15% {
+    box-shadow: 0 -3px 10px rgba(var(--link-box-shadow-color), 0.55);
+  }
+  40% {
+    box-shadow: 3px 0 10px rgba(var(--link-box-shadow-color), 0.85);
+  }
+  60% {
+    box-shadow: 0 5px 10px rgba(var(--link-box-shadow-color), 0.75);
+  }
+  85% {
+    box-shadow: -2px 0 10px rgba(var(--link-box-shadow-color), 0.55);
+  }
+  100% {
+    box-shadow: none;
+    transform: rotateZ(90deg);
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 896px) {
+
+  .Logo .brand {
+    font-weight: var(--font-weight);
+  }
+
+  .Logo .brand > span {
+    display: block;
+  }
+}
+
+@media (max-width: 425px) {
+  .Logo .brand {
+    font-size: 1.35rem;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .Logo .brand {
+    display: none;
+  }
+}
