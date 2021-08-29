@@ -29,8 +29,8 @@
   /* Page Colors */
   --color-dark: rgb(53, 53, 53);
   --color-medium: rgb(171, 171, 171);
-  --color-light: whitesmoke;
-  --color-accent: orange;
+  --color-light: rgb(245, 245, 245);
+  --color-accent: rgb(255, 140, 0);
 
   /* Z-Index */
   --side-bar-z-index: 10;
@@ -97,6 +97,7 @@ ul {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 /* Typography */

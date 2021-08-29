@@ -1,5 +1,5 @@
 .ProcessCard {
-  background-color: var(--color-light);
+  background-color: white;
   background-size: contain;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
   margin-right: 1rem;
 
   overflow: hidden; /* Hides body and text */
-  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.35);
+  box-shadow: 0px 0px 8px rgba(89, 89, 89, 0.35);
 }
 
 .ProcessCard .title {

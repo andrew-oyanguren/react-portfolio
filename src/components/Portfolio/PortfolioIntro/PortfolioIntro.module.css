@@ -1,0 +1,98 @@
+.PortfolioIntro {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+/* Heading */
+
+.PortfolioIntro .heading h1 {
+  font-size: 3rem;
+  font-family: var(--font-family-cursive);
+  font-weight: var(--font-weight-bold);
+}
+
+.PortfolioIntro .heading .text {
+  margin-top: 0.25rem;
+}
+
+.PortfolioIntro .heading .text p {
+  color: rgb(75, 75, 75);
+}
+
+/* Aside */
+
+.PortfolioIntro aside {
+  height: max-content;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.PortfolioIntro aside .title {
+  background-color: var(--color-dark);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+}
+
+.PortfolioIntro aside h4 {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.PortfolioIntro aside .link {
+  margin-top: 0.5rem;
+}
+
+/* ===== Media Queries ===== */
+
+@media (min-width: 322px) {
+  .PortfolioIntro .heading h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 688px) {
+  .PortfolioIntro {
+    text-align: initial;
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .PortfolioIntro .heading {
+    text-align: end;
+  }
+
+  .PortfolioIntro .heading h1 {
+    font-size: 3.75rem;
+  }
+
+  .PortfolioIntro aside {
+    margin-top: 0;
+    width: 220px;
+  }
+}
+
+@media (min-width: 936px) {
+  .PortfolioIntro {
+    margin-top: 7rem;
+  }
+}
+
+@media (min-width: 1272px) {
+  .PortfolioIntro {
+    max-width: 990px;
+  }
+
+  .PortfolioIntro .heading h1 {
+    font-size: 4.5rem;
+  }
+}

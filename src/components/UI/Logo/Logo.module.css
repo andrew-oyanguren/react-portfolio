@@ -2,7 +2,7 @@
   /* Local Variables */
   --link-dimension: 4rem;
   --link-border-radius: 4px;
-  --link-box-shadow-color: 255, 255, 255;
+  --link-box-shadow-color: 100, 100, 100;
   --animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
   display: flex;
@@ -12,7 +12,7 @@
 /* Brand */
 
 .Logo .brand {
-  color: var(--color-accent);
+  color: var(--color-dark);
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-md);
   margin-left: var(--font-size-lg);
@@ -37,7 +37,7 @@
 /* Link States */
 
 .Logo .link:hover {
-  color: var(--color-light);
+  color: var(--color-dark);
 }
 
 .Logo .link::before {

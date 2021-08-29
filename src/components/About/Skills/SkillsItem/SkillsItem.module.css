@@ -1,11 +1,10 @@
 .SkillsItem {
-  color: var(--color-light);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 .SkillsItem .icon {
-  color: var(--color-accent);
+  color: rgb(225, 225, 225);
   font-size: 1.5rem;
   line-height: .8; /* Centers icons */
 }
@@ -15,6 +14,6 @@
 }
 
 .SkillsItem .skill p {
-  color: var(--color-light);
+  color: var(--color-accent);
   font-size: 1rem; 
 }

@@ -1,0 +1,56 @@
+.Display {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 343px;
+  height: 243px;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid var(--color-light);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35);
+}
+
+.Display .tag {
+  background-color: var(--color-dark);
+  position: absolute;
+  top: 1.25rem;
+  left: -2.5rem;
+  transform: rotateZ(-45deg);
+  padding: 0.5rem 2.5rem;
+  border: 5px solid var(--color-accent);
+}
+
+.Display .tag strong {
+  color: var(--color-light);
+  
+  letter-spacing: 0.1rem;
+}
+
+/* ===== Media Queries ===== */
+
+@media (min-width: 376px) {
+  .Display {
+    margin-right: auto;
+    margin-left: auto;
+    width: 343px;
+  }  
+}
+
+@media (min-width: 696px) {
+  .Display {
+    margin: 0;
+    height: 302px;
+  }
+}
+
+@media (min-width: 830px) {
+  .Display {
+    width: 416px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Display {
+    max-width: 460px;
+  }
+}

@@ -1,0 +1,62 @@
+.Project {
+  background: linear-gradient(45deg, rgb(225, 225, 225), rgb(242, 242, 242));
+  margin-top: 4rem;
+}
+
+.Project .container {
+  padding: 2.25rem 1rem;
+}
+
+/* ===== Media Queries ===== */
+
+@media (min-width: 696px) {
+  .Project {
+    margin-top: 7rem;
+  }
+
+  .Project .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 1026px) {
+  .Project {
+    margin-top: 10rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .Project .container {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 1347px) {
+  .Project {
+    max-width: 1298px;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.35);
+  }
+
+  .Project:nth-of-type(even) {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.35);
+  }
+
+  .Project .container {
+    justify-content: space-evenly;
+  }
+}

@@ -1,13 +1,13 @@
 /* Import JSX Elements */
-import PageWrapper from '../components/UI/PageWrapper/PageWrapper';
+import PortfolioPageWrapper from '../components/Portfolio/PortfolioPageWrapper/PortfolioPageWrapper';
 import Portfolio from '../components/Portfolio/Portfolio';
 
 const PortfolioPage = () => {
   return (
     <section>
-      <PageWrapper>
+      <PortfolioPageWrapper>
         <Portfolio />
-      </PageWrapper>
+      </PortfolioPageWrapper>
     </section>
   );
 };

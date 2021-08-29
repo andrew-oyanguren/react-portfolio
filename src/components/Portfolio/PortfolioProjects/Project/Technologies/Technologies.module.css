@@ -1,0 +1,35 @@
+.Technologies {
+  width: max-content;
+  text-align: start;
+  padding-right: 1rem;
+}
+
+.Technologies .heading {
+  background-color: rgb(82, 82, 82);
+  padding: 0.5rem 1rem;
+}
+
+.Technologies .heading h4 {
+  color: var(--color-light);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-md);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.Technologies .list {
+  height: 268px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 0.5rem;
+}
+
+.Technologies .list li {
+  margin-left: 0;
+}
+
+.Technologies .list li p {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-md);
+}

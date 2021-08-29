@@ -30,16 +30,16 @@ li {
   position: absolute;
 
   transform: translateY(-55px);
-  transition: all 0.2s ease-in;
+  transition: all 0.2s ease;
 }
 
 .NavLink:hover {
-  color: var(--color-light);
+  color: var(--color-dark);
 }
 
 .NavLink:active,
 .NavLink.active {
-  color: var(--color-light);
+  color: var(--color-dark);
 }
 
 .NavLink:active.NavLink:before,
@@ -52,7 +52,7 @@ li {
 .NavLink  span {
   display: inline-block; /* To apply a transition to span. */
   color: var(--color-medium);
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-in;
 }
 
 .NavLink:active  span,
