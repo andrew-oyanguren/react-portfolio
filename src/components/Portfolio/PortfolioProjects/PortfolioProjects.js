@@ -14,14 +14,6 @@ const PortfolioProjects = () => {
   return (
     <div className={classes.PortfolioProjects}>
       <Project 
-        title='React Portfolio'
-        image={self}
-        tag='~GitHub'
-        description='My third and current portfolio website. Showcases my control of React using custom hooks, context (for cross-component states), dynamically rendering list elements, dynamically render css, as well as creating a reponsive layout from scratch.'
-        url='https://github.com/andrew-oyanguren/react-portfolio'
-        technologies={['HTML5 (JSX)', 'CSS3 (Modules)', 'JavaScript ES6 (React)', 'React Router']}
-      />
-      <Project 
         title='Food Order App'
         image={foodOrderImage}
         tag='Firebase'
@@ -38,10 +30,18 @@ const PortfolioProjects = () => {
         technologies={['HTML5 (JSX)', 'CSS3 (Modules)', 'JavaScript ES6 (React)', 'Firebase (Authentication)']}
       />
       <Project 
+        title='React Portfolio'
+        image={self}
+        tag='~GitHub'
+        description='My third and current portfolio website. Showcases my control of React using custom hooks, context (for cross-component states), dynamically rendering list elements, dynamically render css, as well as creating a reponsive layout from scratch.'
+        url='https://github.com/andrew-oyanguren/react-portfolio'
+        technologies={['HTML5 (JSX)', 'CSS3 (Modules)', 'JavaScript ES6 (React)', 'React Router', 'Framer Motion']}
+      />
+      <Project 
         title='Memory Game'
         image={memoryGameImage}
         tag='~GitHub'
-        description='Focuses on manipulating the DOM, looping through arrays, using new methods, and improving my problem solving capabilities with JS. I have a toddler who benefited from this memory game, and he loves it! Hashtag proud daddy here.'
+        description='Focuses on manipulating the DOM, looping through arrays, using new methods, and improving my problem solving abilities with JS. I have a toddler who benefited from this memory game, and he loves it! Hashtag proud daddy here.'
         url='https://github.com/andrew-oyanguren/memory-game'
         technologies={['HTML5', 'CSS3 (Sass)', 'JavaScript ES6']}
       />

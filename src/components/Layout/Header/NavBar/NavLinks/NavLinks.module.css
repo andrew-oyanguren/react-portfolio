@@ -30,7 +30,7 @@ li {
   position: absolute;
 
   transform: translateY(-55px);
-  transition: all 0.2s ease;
+  transition: all 0.1s ease-in-out 1.09s;
 }
 
 .NavLink:hover {
