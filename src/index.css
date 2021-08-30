@@ -35,15 +35,12 @@
   /* Z-Index */
   --side-bar-z-index: 10;
   --header-z-index: 100;
-  --hamburger-z-index: 101;
-  --modal-z-index: 999;
-  --loader-z-index: 1000;
 
   /* Breakpoints */
-  --sm-screen: 576px;
-  --md-screen: 768px;
-  --lg-screen: 992px;
   --xl-screen: 1200px;
+
+  /* Header Height */
+  --header-height: 112px;
 }
 
 /* Global Presets */
@@ -53,13 +50,16 @@ html {
   font-family: var(--font-family-sans);
   font-size: var(--font-size);
   line-height: var(--line-height);
+  /* mobile viewport bug fix */
+  height: -webkit-fill-available;
+  overflow-x: hidden;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-  margin: 0; /* research some more */
+  margin: 0;
 }
 
 ::before,
@@ -69,6 +69,13 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+  overflow-x: hidden;
+}
+
+main {
   overflow-x: hidden;
 }
 
@@ -114,9 +121,9 @@ h1 {
 }
 
 h2 {
-  color: var(--color-accent);  /* May need to change */
+  color: var(--color-accent);
   font-size: 1.75rem;
-  font-weight: var(--font-weight-md); /* Stylistic Choice */
+  font-weight: var(--font-weight-md);
 }
 
 p {

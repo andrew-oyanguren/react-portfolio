@@ -1,6 +1,5 @@
 .ContactPageWrapper {
   width: 100%;
-  max-width: var(--xl-screen);
   margin-left: auto; /* Centers Wrapper */
   margin-right: auto;
   padding-left: 16px; /* Provides padding for mobile view */
@@ -17,13 +16,5 @@
   .ContactPageWrapper {
     padding-left: 0; /* Removes padding from edges */
     padding-right: 0;
-  }
-}
-
-/* Mid Laptop */
-
-@media (min-width: 936px) {
-  .ContactPageWrapper {
-    max-width: 100%; /* Allows Wrapper to expand the width of entire viewport */
   }
 }

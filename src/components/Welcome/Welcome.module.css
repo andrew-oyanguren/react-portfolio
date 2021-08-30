@@ -1,11 +1,16 @@
 .Welcome {
   text-align: center; /* Centers all text content */
   max-width: 343px;
-  height: calc((100vh) - 112px); /* one hundred viewport height minus header height */
+  min-height: 422px;
 
-  position: relative; /* Needed to center container */
+  overflow-y: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
+ 
 /* Title */
 
 .Welcome .title {
@@ -21,11 +26,6 @@
 
 .Welcome .container {
   width: 100%;
-
-  position: absolute; /* Centers all content */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 /* Location */
@@ -42,6 +42,32 @@
 
 /* ===== Media Queries ===== */
 
+/* Mobile Common Sizes */
+
+@media (min-height: 536px) and (max-width: 320px) {
+  .Welcome {
+    min-height: 456px;
+  }
+}
+
+@media (min-height: 570px) and (max-width: 375px) {
+  .Welcome {
+    min-height: 528px;
+  }
+}
+
+@media (min-height: 642px) and (max-width: 375px) {
+  .Welcome {
+    min-height: 555px;
+  }
+}
+
+@media (min-height: 720px) and (max-width: 375px) {
+  .Welcome {
+    min-height: 608px;
+  }
+}
+
 /* Mobile Large */
 
 @media (min-width: 376px) {
@@ -53,18 +79,22 @@
 
 /* Mobile Tall Screens */
 
-@media (min-height: 670px) and (max-width: 414px) {
+@media (min-height: 667px) and (max-width: 480px) {
+  .Welcome {
+    min-height: 688px
+  }
+
   .Welcome .title h1 {
     font-size: 3rem;
   }
-  
 }
 
-/* Tablet */
+/* Tablet / Mobile */
 
 @media (min-width: 426px) {
   .Welcome {
     max-width: 548px; /* Increases content width */
+    min-height: calc((100vh) - var(--header-height));
   }
 
   .Welcome .title h1 {
@@ -72,7 +102,7 @@
   }
 }
 
-/* laptop */
+/* Laptop / Tablet */
 
 @media (min-width: 770px) {
   .Welcome {
@@ -95,9 +125,26 @@
   }
 }
 
+@media (min-width: 768px) and (min-height: 968px) {
+  .Welcome {
+    min-height: 912px;
+  }
+
+}
+
+@media (min-width: 768px) and (min-height: 1200px) {
+  .Welcome {
+    min-height: 1168px;
+  }
+}
+
 /* Large Screens */
 
 @media (min-width: 1026px) {
+  .Welcome {
+    min-height: calc((100vh) - var(--header-height));
+  }
+
   .Welcome .title h1 {
     font-size: 3.5rem;
   }
@@ -106,9 +153,6 @@
 /* XLarge Screens */
 
 @media (min-width: 1290px) {
-  .Welcome {
-    max-width: 800px;
-  }
 
   .Welcome .title h1 {
     font-size: 4rem;

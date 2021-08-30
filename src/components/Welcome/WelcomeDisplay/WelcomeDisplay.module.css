@@ -68,14 +68,6 @@
 
 /* ===== Media Queries ===== */
 
-/* Mobile Medium */
-
-/*@media (min-width: 324px) {
-  .WelcomeDisplay .quote .container {
-    width: 90%;
-  }
-}*/
-
 /* Mobile short screens */
 
 @media (max-height: 510px) and (max-width: 414px) {

@@ -1,12 +1,20 @@
 import { useState, useEffect } from 'react';
 
 const useBreakpoint = (breakpoint) => {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenWidth, setScreenWidth] = useState(window.visualViewport.width);
 
   /* Runs at load time to set a screen width */
   useEffect(() => {
+    // timeoutId for debouncing handler
+    let timeoutId = null;
+
     // Updates state to new innerwidth.
-    const screenResizeHandler = () => setScreenWidth(window.innerWidth);
+    const screenResizeHandler = () => {
+      // prevent execution of previous setTimeout
+      clearTimeout(timeoutId);
+      // change width from the state object after 150 milliseconds
+      timeoutId = setTimeout(() => setScreenWidth(window.visualViewport.width), 150);
+    };
 
     // Listens to "resize" event, updates state on resize.
     window.addEventListener('resize', screenResizeHandler);
@@ -22,7 +30,6 @@ const useBreakpoint = (breakpoint) => {
 
   return {
     customBreakpoint,
-    screenWidth
   };
 };
 

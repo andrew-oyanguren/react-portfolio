@@ -1,6 +1,6 @@
 .LoadingDots {
   /* Local Variables */
-  --dots-bg-color: 0, 139, 139;
+  --dots-bg-color: 255, 140, 0;
   --animation-timing-function: cubic-bezier(.19,.57,.3,.98);
 
   width: 100px;

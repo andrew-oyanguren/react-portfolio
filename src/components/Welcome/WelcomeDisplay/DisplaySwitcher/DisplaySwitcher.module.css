@@ -30,10 +30,6 @@
   color: var(--color-accent);
 }
 
-.DisplaySwitcher button:active {
-  transform: scale(1.15);
-}
-
 /* Title */
 
 .DisplaySwitcher .title {
