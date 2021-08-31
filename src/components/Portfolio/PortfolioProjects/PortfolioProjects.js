@@ -18,7 +18,7 @@ const PortfolioProjects = () => {
         image={foodOrderImage}
         tag='Firebase'
         description='Uses all of the core fundamentals of React to create a food order App. Including hooks such as useState, useEffect, useContext, useRef. Incorporates Firebase storage to store items, and uses localstorage to save cart on re-load. '
-        url='https://github.com/andrew-oyanguren/food-order-app'
+        url='https://food-order-app-130de.firebaseapp.com/'
         technologies={['HTML5 (JSX)', 'CSS3 (Modules)', 'JavaScript ES6 (React)', 'Firebase (Database)']}
       />
       <Project 
